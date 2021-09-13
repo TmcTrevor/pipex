@@ -7,16 +7,17 @@
 # include <stdio.h>
 # include <sys/wait.h>
 # include <fcntl.h>
+# include "../GNL/get_next_line.h"
 # include "../libft/libft.h"
 
 /* Mandatory functions */
 void	error(void);
 char	*find_path(char *cmd, char **envp);
-int		get_next_line(char **line);
+
 void	cmd_call(char *argv, char **envm);
 
 /* Bonus functions */
 int		open_file(char *argv, int i);
-void	usage(void);
+void    arg_err(void);
 
 #endif

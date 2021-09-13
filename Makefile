@@ -13,11 +13,11 @@
 NAME 	= pipex.a
 PROG	= pipex
 
-SRCS 	= srcs/pipex.c srcs/cmd_utils.c
+SRCS 	= srcs/pipex.c srcs/cmd_utils.c 
 OBJS 	= ${SRCS:.c=.o}
 MAIN	= srcs/pipex.c
 
-SRCS_B	= srcs/pipex_bonus.c srcs/utils.c srcs/utils_bonus.c
+SRCS_B	= srcs/pipex_bonus.c srcs/cmd_utils.c srcs/bonus_cmd_utils.c GNL/get_next_line.c
 OBJS_B	= ${SRCS_B:.c=.o}
 MAIN_B	= srcs/pipex_bonus.c
 
